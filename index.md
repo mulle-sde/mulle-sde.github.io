@@ -19,8 +19,8 @@ ls -R dependency
 
 If you think "So what ?" knowing that this will work on any kind of Unix based system, then the answer is no.
 
-If you were thinking, but what if the downloaded dependecies could also download their dependencies, you are
-in the rigt place.
+If you were thinking, "But what if the downloaded dependencies could also download their dependencies ?", then you are
+definitely in the right place.
 
 
 ## Should you use it ?
