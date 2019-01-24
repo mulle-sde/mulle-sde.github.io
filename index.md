@@ -2,6 +2,8 @@
 
 The IDE for the commandline.
 
+**THIS PAGE IS A DRAFT **
+
 ## Should you be interested in MulleSDE ?
 
 Are you tied to a single platform and do you develop in the same language and development
