@@ -2,6 +2,27 @@
 
 The IDE for the commandline.
 
+## Should I be interested in MulleSDE for you ?
+
+Are you tied to a single platform and do you develop in the same language and development
+environmet (aka IDE) the whole time ? 
+
+Answered no ? Then install [mulle-sde](//github.com/mulle-sde/mulle-sde) and try the following commands:
+
+```bash
+mulle-sde init -d test none
+cd test
+mulle-sde dependency add --github mulle-nat MulleScion
+mulle-sde craft
+ls -R dependency
+```
+
+If you think "So what ?" knowing that this will work on any kind of Unix based system, then the answer is no.
+
+If you were thinking, but what if the downloaded dependecies could also download their dependencies, you are
+in the rigt place.
+
+
 ## Should you use it ?
 
 * if you want to develop using mulle-objc, I'd say yes
