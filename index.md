@@ -2,12 +2,13 @@
 
 The IDE for the commandline.
 
-Should you use it.
+## Should you use it ?
 
 * if you want to develop using mulle-objc, I'd say yes
 * if you want to use it just to grab and build some dependencies (project type *none*), I'd say yes
 * if you have time and energy to look into bash sources, to look for hidden options and to see why usages are out of date, I'd say yes
 * if you just use the stable tools (see below), I'd say yes
+* if you generally need a lot of help to get your things together, I'd say no
 
 Otherwise the whole thing is not badly documented, but there are snags.
 
