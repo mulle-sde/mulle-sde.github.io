@@ -7,6 +7,7 @@ Should you use it.
 * if you want to develop using mulle-objc, I'd say yes
 * if you want to use it just to grab and build some dependencies (project type *none*), I'd say yes
 * if you have time and energy to look into bash sources, to look for hidden options and to see why usages are out of date, I'd say yes
+* if you just use the stable tools (see below), I'd say yes
 
 Otherwise the whole thing is not badly documented, but there are snags.
 
@@ -17,3 +18,14 @@ Otherwise the whole thing is not badly documented, but there are snags.
 5. The version checking like "fetch me the latest foo with version < 2" isn't implemented, but probably will be.
 
 On a day to day basis, MulleSDE though is a joy to use and my favorite IDE, because it saves me so much time.
+
+## Presumed to be stable
+
+These tools look like they are complete and useful on their own
+
+* mulle-env     - custom environments for projects 
+* mulle-fetch   - grab and unpack repositories and archives
+* mulle-make    - detect build method and build a project 
+* mulle-match   - categorize files and make files
+* mulle-monitor - monitor a filesystem folder and trigger commands on change
+
