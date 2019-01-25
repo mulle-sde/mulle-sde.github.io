@@ -9,7 +9,8 @@ int  foo( char *s)
 
 ## Objective-C
 
-<!-- objective-c doesn't work -->
+<!-- objective-c doesn't work  and objc introduces a weird error -->
+
 ```objc
 - foo:(char *) s
 {
