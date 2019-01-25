@@ -9,10 +9,11 @@ int  foo( char *s)
 
 ## Objective-C
 
-```objective-c
-int  foo( char *s)
+<!-- objective-c doesn't work -->
+```objc
+- foo:(char *) s
 {
-   return( s);
+   [self foo:x];
 }
 ```
 
