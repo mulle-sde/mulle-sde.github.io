@@ -2,12 +2,18 @@
 
 The IDE for the commandline.
 
-**THIS PAGE IS A DRAFT **
+<script id="asciicast-3QTX6O9JcrspYUSecuc5zCDHp"
+        src="https://asciinema.org/a/3QTX6O9JcrspYUSecuc5zCDHp.js"
+        async>
+</script>
+
+**THIS PAGE IS A DRAFT**
+
 
 ## Should you be interested in MulleSDE ?
 
 Are you tied to a single platform and do you develop in the same language and development
-environmet (aka IDE) the whole time ? 
+environmet (aka IDE) the whole time ?
 
 Answered no ? Then install [mulle-sde](//github.com/mulle-sde/mulle-sde) and try the following commands:
 
@@ -47,9 +53,9 @@ On a day to day basis, MulleSDE though is a joy to use and my favorite IDE, beca
 
 These tools look like they are complete and useful on their own
 
-* mulle-env     - custom environments for projects 
+* mulle-env     - custom environments for projects
 * mulle-fetch   - grab and unpack repositories and archives
-* mulle-make    - detect build method and build a project 
+* mulle-make    - detect build method and build a project
 * mulle-match   - categorize files and make files
 * mulle-monitor - monitor a filesystem folder and trigger commands on change
 
