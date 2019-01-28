@@ -37,7 +37,7 @@ If you think "So what ?", then the answer is NO.
 
 ## Should you use it ?
 
-* if you want to develop using mulle-objc: YES
+* if you want to develop with [mulle-objc](//mulle-objc.github.io): YES
 * if you want to use it just to grab and build some dependencies (project type *none*): MAYBE
 * if you have time and energy to look into bash sources, to look for hidden options and to see why usages are out of date: GO FOR IT
 * if you just use the stable tools (see below): YES
