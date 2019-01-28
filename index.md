@@ -1,6 +1,6 @@
-# MulleSDE
+![Logo](https://avatars3.githubusercontent.com/u/35078660?s=128)
 
-The IDE for the command-line.
+# MulleSDE
 
 * fetches remote files and place them anywhere in your project tree
 * interfaces with various build systems
