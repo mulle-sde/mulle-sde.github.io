@@ -43,7 +43,10 @@ If you think "So what ?", then the answer is NO.
 * if you just use the stable tools (see below): YES
 * if you generally need a lot of help to get your things together:NO
 
-Otherwise the whole thing is not badly documented, but there are snags.
+## The snags
+
+The whole thing is not badly documented. There is even a [Wiki](https://github.com/mulle-sde/mulle-sde/wiki) with
+quite a bit of content. But there are snags.
 
 1. The project is still fairly unstable. I seem to keep rewriting stuff. Some areas are stable, but some areas aren't.
 2. There isn't a proper usage for every command yet. Some of the usages are already outdated.
