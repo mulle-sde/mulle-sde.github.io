@@ -1,7 +1,7 @@
 theme: jekyll-theme-cayman
 
 title: mulle-sde
-description: "The IDE for the command-line"
+description: "The IDE for the command line. Written in bash."
 
 highlighter: rouge
 
