@@ -1,4 +1,4 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
 
 title: "MulleSDE"
 description: "The IDE for the command line. Written in bash."
