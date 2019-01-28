@@ -1,18 +1,16 @@
-Script started on 2019-01-28 13:28:42+01:00
-]0;nat@terodde: ~nat@terodde:~$ cd /tmp
-]0;nat@terodde: /tmpnat@terodde:/tmp$ mulle-sde init -d foo -m mui[Kll-esd[K[K[K[Ke-sde/c-developer executable
+Script started on 2019-01-28 16:15:55+01:00
+]0;nat@terodde: /home/src/srcS/mulle-sde.github.io/rec1nat@terodde:/home/src/srcS/mulle-sde.github.io/rec1$ cd /tmp/
+]0;nat@terodde: /tmpnat@terodde:/tmp$ mulle-sde init -d o[Kgoo[K[K[Kfoo -m mulle-sde/c-developer executable
 [0;36m[1mInstalling project extensions in [0m[1m/tmp/foo[0;36m[1m[0m
 [0;36m[1mRunning init script "/home/src/srcS/mulle-sde-developer/src/mulle-sde/sde/init"[0m
 [0;36m[1mInstalled meta extension "mulle-sde/c-developer"[0m
 [0;36m[1mInstalling project files for "mulle-sde/c-developer"[0m
-[0;31m[1mRunning post-init script "/home/nat/bin/post-mulle-sde-init"[0m
-[0;36m[1mYou can suppress this behavior with --no-post-init[0m
 [0;36m[1mEnter the environment:
    [0m[1mmulle-sde "foo"[0;36m[1m[0m
 ]0;nat@terodde: /tmpnat@terodde:/tmp$ mulle-sde status
 [0;31m[1mThere is no mulle-sde project here[0m
 ]0;nat@terodde: /tmpnat@terodde:/tmp$ cd foo
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ ls
+]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ m[Kls
 [0m[01;34mcmake[0m  CMakeLists.txt  README.md  [01;34msrc[0m
 ]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde list
 cmakefile/all: CMakeLists.txt
@@ -23,7 +21,7 @@ source/private-headers: src/include-private.h
 source/public-headers: src/include.h
 source/public-headers: src/version.h
 source/sources: src/main.c
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde envirom[Knment
+]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde environment
 [0;36m[1mEnvironment[0m
 [0;36m[1m[0;35m[1mplugin[0m
 ADDICTION_DIR="${MULLE_VIRTUAL_ROOT}/addiction"
@@ -50,8 +48,6 @@ MULLE_MATCH_FILENAMES="config:*.h:*.inc:*.c:CMakeLists.txt:*.cmake"
 MULLE_MATCH_PATH="${PROJECT_SOURCE_DIR}:CMakeLists.txt:cmake"
 MULLE_SDE_PROTECT_PATH="cmake/share"
 MULLE_SDE_UPDATE_CALLBACKS="sourcetree:source"
-[0;36m[1m[0;35m[1mhost-terodde[0m
-MULLE_FETCH_SEARCH_PATH="${MULLE_FETCH_SEARCH_PATH}:/home/src/srcO/mulle-c:/home/src/srcO/mulle-core:/home/src/srcO/mulle-concurrent:/home/src/srcO/mulle-objc:/home/src/srcO/MulleFoundation:/home/src/srcM/MulleEOF/EOControl:/home/src/srcM/MulleEOF/EOAccess"
 ]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde tool
 [0;36m[1mshare/tool-plugin[0m
 [0;32mawk[0m
@@ -160,103 +156,71 @@ MULLE_FETCH_SEARCH_PATH="${MULLE_FETCH_SEARCH_PATH}:/home/src/srcO/mulle-c:/home
 
 ]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde status
 [0;36m[1mThere is no sourcetree (/tmp/foo)[0m
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde s[Kdependency add --github mulle-c mulle-utf
+]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ ,[Kmulle-sde dependency add --github mulle-c mulle-uit[K[Ktf
 [0;36m[1mAdded [0;35m[1mmulle-utf[0m
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde dependency list
-address    marks                  aliases
--------    -----                  -------
-mulle-utf  no-all-load,no-import   
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde [K[K[Kourcetree list -r -u
+]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ m,[Kull-[Ke-sourcetree list -r -u
 address    url                                                         fetchoptions
 -------    ---                                                         ------------
 mulle-utf  https://github.com/mulle-c/mulle-utf/archive/latest.tar.gz   
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde environment | [K[K-[K[1@-[1@s[1@ [C[C[C[C[C[C[C[C[C[C[C[C| egrep SYMKLI[K[K[KLINK
-MULLE_SOURCETREE_[01;31m[KSYMLINK[m[K="YES"
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde fec[Ktch
-[0;36m[1mSymlinked [0;35m[1mmulle-utf[0;36m[1m to [0m[1m/home/src/srcO/mulle-c/mulle-utf[0;36m[1m[0m
-[0;36m[1mSymlinked [0;35m[1mmulle-allocator[0;36m[1m to [0m[1m/home/src/srcO/mulle-c/mulle-allocator[0;36m[1m[0m
-[0;36m[1mSymlinked [0;35m[1mmulle-c11[0;36m[1m to [0m[1m/home/src/srcO/mulle-c/mulle-c11[0;36m[1m[0m
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ ls
+]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde fetch
+[0;36m[1mFetching [0;35m[1mmulle-utf[0;36m[1m from [0m[1mhttps://github.com/mulle-c/mulle-utf/archive/latest.tar.gz[0;36m[1m.[0m
+[0;36m[1mUsing cached "/home/nat/.cache/mulle-fetch/archive/mulle-utf-latest.tar.gz" for [0;35m[1mhttps://github.com/mulle-c/mulle-utf/archive/latest.tar.gz[0;36m[1m ...[0m
+]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde sourcetree list -r -u
+[0;91m[1mmulle-sde error:[0m[0;91m[1m Unknown command "sourcetree"[0m
+Usage:
+   mulle-sde [flags] [command] [options]
+
+   The commandline IDE.
+
+   Create a new project with `mulle-sde init` or enter an existing one with
+   `mulle-sde <directory>`.
+
+Flags:
+   --style <val>  : see `mulle-env help` for style description
+   -DKEY=VALUE    : define one-time environment variable
+   -S             : search for enclosing environment
+   -e             : bypass mulle-env check
+   -f             : force operation
+   -n             : dry run
+   -s             : be silent
+   -v             : be verbose (increase with -vv, -vvv)
+
+Commands:
+   bash-completion: get bash completion with `. $(mulle-sde bash-completion)`
+   init           : create a new project
+   show           : show available language and buildtool extensions
+   status         : show information about the current directory
+      (use mulle-sde -v help to show more commands)
+
+   Options are command specific. Use mulle-sde <command> -h for help.
+]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde sourcetree list -r -u[1P[1P[1P[1P
+address    url                                                         fetchoptions
+-------    ---                                                         ------------
+mulle-utf  https://github.com/mulle-c/mulle-utf/archive/latest.tar.gz   
+]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-s[K[K[K[K[K[K[Kls
 [0m[01;34mcmake[0m  CMakeLists.txt  README.md  [01;34msrc[0m  [01;34mstash[0m
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ s[Kls stash/
-[0m[01;36mmulle-allocator[0m  [01;36mmulle-c11[0m  [01;36mmulle-utf[0m
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sourcetree list -r -u
-address           url                                                               fetchoptions
--------           ---                                                               ------------
-mulle-utf         https://github.com/mulle-c/mulle-utf/archive/latest.tar.gz         
- mulle-allocator  https://github.com/mulle-c/mulle-allocator/archive/latest.tar.gz   
-  mulle-c11       https://github.com/mulle-c/mulle-c11/archive/latest.tar.gz         
+]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ ls stash/
+[0m[01;34mmulle-utf[0m
 ]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde craft
 [0;36m[1mUpdating [0;35m[1mfoo[0;36m[1m sourcetree[0m
 [0;36m[1mUpdating [0;35m[1mfoo[0;36m[1m source[0m
 [0;36m[1mUpdating [0;35m[1mfoo[0;36m[1m buildorder[0m
-[0;36m[1mLet [0m[1mcmake[0;36m[1m do a [0;35m[1mDebug[0;36m[1m build [0;35m[1mHeaders[0;36m[1m phase of [0;35m[1mmulle-c11[0;36m[1m for SDK [0;35m[1mDefault[0;36m[1m in "build/.buildorder/Debug/mulle-c11" ...[0m
-[0;36m[1mLet [0m[1mcmake[0;36m[1m do a [0;35m[1mDebug[0;36m[1m build [0;35m[1mHeaders[0;36m[1m phase of [0;35m[1mmulle-allocator[0;36m[1m for SDK [0;35m[1mDefault[0;36m[1m in "build/.buildorder/Debug/mulle-allocator" ...[0m
-[0;36m[1mLet [0m[1mcmake[0;36m[1m do a [0;35m[1mDebug[0;36m[1m build [0;35m[1mCompile[0;36m[1m phase of [0;35m[1mmulle-allocator[0;36m[1m for SDK [0;35m[1mDefault[0;36m[1m in "build/.buildorder/Debug/mulle-allocator-f3e669" ...[0m
-[0;36m[1mLet [0m[1mcmake[0;36m[1m do a [0;35m[1mDebug[0;36m[1m build [0;35m[1mCompile[0;36m[1m phase of [0;35m[1mmulle-c11[0;36m[1m for SDK [0;35m[1mDefault[0;36m[1m in "build/.buildorder/Debug/mulle-c11-f2c1f0" ...[0m
-[0;36m[1mLet [0m[1mcmake[0;36m[1m do a [0;35m[1mDebug[0;36m[1m build [0;35m[1mLink[0;36m[1m phase of [0;35m[1mmulle-c11[0;36m[1m for SDK [0;35m[1mDefault[0;36m[1m in "build/.buildorder/Debug/mulle-c11-91c375" ...[0m
-[0;36m[1mLet [0m[1mcmake[0;36m[1m do a [0;35m[1mDebug[0;36m[1m build [0;35m[1mLink[0;36m[1m phase of [0;35m[1mmulle-allocator[0;36m[1m for SDK [0;35m[1mDefault[0;36m[1m in "build/.buildorder/Debug/mulle-allocator-18bf22" ...[0m
 [0;36m[1mLet [0m[1mcmake[0;36m[1m do a [0;35m[1mDebug[0;36m[1m build of [0;35m[1mmulle-utf[0;36m[1m for SDK [0;35m[1mDefault[0;36m[1m in "build/.buildorder/Debug/mulle-utf" ...[0m
-[0;32m[1mCraft main project [0;35m[1mfoo[0;32m[1m[0m
-[0;36m[1mLet [0m[1mcmake[0;36m[1m do a [0;35m[1mDebug[0;36m[1m build of [0;35m[1mfoo[0;36m[1m for SDK [0;35m[1mDefault[0;36m[1m in "build/Debug" ...[0m
-[0;32m[1mBuild logs will be in "build/Debug/.log/cmake.log" and "build/Debug/.log/ninja.log"[0m
-=[25935]=>  MULLE_MAKE_VERSION='0.9.3' '/tmp/foo/.mulle/var/terodde/env/bin/cmake' -G 'Ninja' -DCMAKE_BUILD_TYPE='Debug' '../..'
--- The C compiler identification is GNU 8.2.0
--- Check for working C compiler using: Ninja
--- Check for working C compiler using: Ninja -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- MULLE_UTF_LIBRARY is /tmp/foo/dependency/lib/libmulle-utf.a
--- MULLE_ALLOCATOR_LIBRARY is /tmp/foo/dependency/lib/libmulle-allocator.a
--- MULLE_C11_HEADER is /tmp/foo/dependency/include/mulle-c11/mulle-c11.h
--- Configuring done
--- Generating done
--- Build files have been written to: /tmp/foo/build/Debug
-=[26002]=>  MULLE_MAKE_VERSION='0.9.3' 'ninja' -v
-[1/3] /tmp/foo/.mulle/var/terodde/env/bin/cc   -isystem ../../addiction/include -isystem ../../dependency/include -isystem ../../dependency/Debug/include -I../../src -g -MMD -MT CMakeFiles/_1_foo.dir/src/main.c.o -MF CMakeFiles/_1_foo.dir/src/main.c.o.d -o CMakeFiles/_1_foo.dir/src/main.c.o   -c ../../src/main.c
-[2/3] : && /tmp/foo/.mulle/var/terodde/env/bin/cc  -g   CMakeFiles/_1_foo.dir/src/main.c.o  -o foo  -rdynamic ../../dependency/lib/libmulle-utf.a ../../dependency/lib/libmulle-allocator.a -Wl,-rpath,:::::::::::::: && :
-[3/3] cd /tmp/foo/build/Debug && /tmp/foo/.mulle/var/terodde/env/bin/mulle-create-build-motd executable /tmp/foo/build/Debug foo
-[0;36m[1mRun your executable:[0m
-[1m   /tmp/foo/build/Debug/foo[0m
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ /tmp/foo/build/Debug/foo
-VfL Bochum 1848
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ mulle-sde log mulle-allocator
-[0;36m[1mmulle-allocator[0m
-[0;36m[1m[0m[1m/tmp/foo/build/.buildorder/Debug/mulle-allocator/.log/cmake.log:[0m
-=[24880]=>  MULLE_MAKE_VERSION='0.9.3' '/tmp/foo/.mulle/var/terodde/env/bin/cmake' -G 'Ninja' --no-warn-unused-cli -DMULLE_MAKE_PHASE='HEADERS' -DCMAKE_INSTALL_PREFIX:PATH='/tmp/foo/dependency' -DCMAKE_BUILD_TYPE='Debug' '../../../../../../home/src/srcO/mulle-c/mulle-allocator'
-Not searching for unused variables given on the command line.
--- The C compiler identification is GNU 8.2.0
--- Check for working C compiler using: Ninja
--- Check for working C compiler using: Ninja -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: /tmp/foo/build/.buildorder/Debug/mulle-allocator
-[0;36m[1m[0m[1m/tmp/foo/build/.buildorder/Debug/mulle-allocator/.log/ninja.log:[0m
-=[25004]=>  MULLE_MAKE_VERSION='0.9.3' 'ninja'  install
-[0/1] Install the project...
--- Install configuration: "Debug"
--- Installing: /tmp/foo/dependency/include/mulle-allocator/_mulle-allocator-include.h
--- Installing: /tmp/foo/dependency/include/mulle-allocator/include.h
--- Installing: /tmp/foo/dependency/include/mulle-allocator/mulle-allocator.h
--- Installing: /tmp/foo/dependency/include/mulle-allocator/mulle-allocator-struct.h
--- Installing: /tmp/foo/dependency/include/mulle-allocator/version.h
--- Installing: /tmp/foo/dependency/include/mulle-allocator/private/include-private.h
--- Installing: /tmp/foo/dependency/include/mulle-allocator/cmake/DependenciesAndLibraries.cmake
--- Installing: /tmp/foo/dependency/include/mulle-allocator/cmake/_Dependencies.cmake
--- Installing: /tmp/foo/dependency/include/mulle-allocator/cmake/_Libraries.cmake
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ ls dependency/lib/
-libmulle-allocator.a  libmulle-utf.a
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ ls dependency/u[Kinclude/
-[0m[01;34mmulle-allocator[0m  [01;34mmulle-c11[0m  [01;34mmulle-utf[0m
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ ls dependency/include/[4Plib/mulle-sde log mulle-allocator[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P/tmp/foo/build/Debug/foo[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pmulle-sde craft/tmp/foo/build/Debug/foo
-VfL Bochum 1848
-]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ e[Kexit
-exit
+CMake Error at cmake/_Dependencies.cmake:66 (message):
+  MULLE_ALLOCATOR_LIBRARY was not found
+Call Stack (most recent call first):
+  cmake/DependenciesAndLibraries.cmake:8 (include)
+  cmake/share/Dependencies.cmake:13 (include)
+  CMakeLists.txt:30 (include)
 
-Script done on 2019-01-28 13:31:27+01:00
+
+[0;31m[0m[0;36m[1mCheck the build log: [0m[1mbuild/.buildorder/Debug/mulle-utf/.log/cmake.log[0;36m[1m[0m
+[0;91m[1mmulle-make fatal error:[0m[0;91m[1m cmake failed[0m
+[0;36m[1mView logs with
+[0m[1m   mulle-craft log mulle-utf[0m
+]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ ls stash/fe[K[Kmulle-utf/
+[0m[01;34mcmake[0m           [01;34mdox[0m      [01;34mmulle-project[0m              README.md        [01;34mresearch[0m  [01;34mtest[0m
+CMakeLists.txt  LICENSE  mulle-utf.sublime-project  RELEASENOTES.md  [01;34msrc[0m       [01;34municode[0m
+]0;nat@terodde: /tmp/foonat@terodde:/tmp/foo$ exit
+
+Script done on 2019-01-28 16:18:21+01:00

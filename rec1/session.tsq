@@ -209,32 +209,6 @@
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
 . CR/^M LF/^J
-@ 0.000081
-: Esc [ 0 ; 31 m
-& SGR: SELECT GRAPHIC RENDITION
-" Clear graphic rendition to defaults.
-" Set foreground color red.
-: Esc [ 1 m
-& SGR: SELECT GRAPHIC RENDITION
-" Set bold text.
-|Running post-init script "/home/nat/bin/post-mulle-sde-init"|
-: Esc [ 0 m
-& SGR: SELECT GRAPHIC RENDITION
-" Clear graphic rendition to defaults.
-. CR/^M LF/^J
-@ 0.547162
-: Esc [ 0 ; 36 m
-& SGR: SELECT GRAPHIC RENDITION
-" Clear graphic rendition to defaults.
-" Set foreground color cyan.
-: Esc [ 1 m
-& SGR: SELECT GRAPHIC RENDITION
-" Set bold text.
-|You can suppress this behavior with --no-post-init|
-: Esc [ 0 m
-& SGR: SELECT GRAPHIC RENDITION
-" Clear graphic rendition to defaults.
-. CR/^M LF/^J
 @ 0.216933
 : Esc [ 0 ; 36 m
 & SGR: SELECT GRAPHIC RENDITION
@@ -594,39 +568,13 @@
 . CR/^M LF/^J
 |MULLE_SDE_UPDATE_CALLBACKS="sourcetree:source"|
 . CR/^M LF/^J
-@ 0.004543
-: Esc [ 0 ; 36 m
-& SGR: SELECT GRAPHIC RENDITION
-" Clear graphic rendition to defaults.
-" Set foreground color cyan.
-: Esc [ 1 m
-& SGR: SELECT GRAPHIC RENDITION
-" Set bold text.
-: Esc [ 0 ; 35 m
-& SGR: SELECT GRAPHIC RENDITION
-" Clear graphic rendition to defaults.
-" Set foreground color magenta.
-: Esc [ 1 m
-& SGR: SELECT GRAPHIC RENDITION
-" Set bold text.
-|host-terodde|
-: Esc [ 0 m
-& SGR: SELECT GRAPHIC RENDITION
-" Clear graphic rendition to defaults.
-. CR/^M LF/^J
-@ 0.005193
-|MULLE_FETCH_SEARCH_PATH="${MULLE_FETCH_SEARCH_PATH}:/home/src/srcO/mulle-c:|-
--|/home/src/srcO/mulle-core:/home/src/srcO/mulle-concurrent:/home/src/srcO/m|-
--|ulle-objc:/home/src/srcO/MulleFoundation:/home/src/srcM/MulleEOF/EOControl|-
--|:/home/src/srcM/MulleEOF/EOAccess"|
-. CR/^M LF/^J
 @ 0.760321
 : Esc ]
 & OSC: OPERATING SYSTEM COMMAND
 |0;nat@terodde: /tmp/foo|
 . BEL/^G
 |nat@terodde:/tmp/foo$ |
-@ 1.215610
+@ 2.215610
 |m|
 @ 0.207911
 |u|
@@ -2016,146 +1964,39 @@
 |0;nat@terodde: /tmp/foo|
 . BEL/^G
 |nat@terodde:/tmp/foo$ |
-@ 2.231570
+@ 0.231631
 |m|
-@ 0.239872
+@ 0.240076
 |u|
-@ 0.168093
+@ 0.168523
 |l|
-@ 0.095920
+@ 0.071422
 |l|
-@ 0.304242
+@ 0.168037
 |e|
-@ 0.095682
+@ 0.063844
 |-|
-@ 0.144073
+@ 0.144067
 |s|
-@ 0.095915
+@ 0.096104
 |d|
-@ 0.071885
+@ 0.192150
 |e|
-@ 0.160166
+@ 0.111878
 | |
-@ 0.095986
-|e|
-@ 0.167837
-|n|
-@ 0.120210
-|v|
-@ 0.135839
-|i|
-@ 0.096272
-|r|
-@ 0.240195
-|o|
-@ 0.191687
-|n|
-@ 0.071930
-|m|
-@ 0.111891
-|e|
-@ 0.096153
-|n|
-@ 0.240601
-|t|
-@ 0.191801
-| |
-@ 0.311531
-|||
-@ 0.191361
-| |
-@ 0.232057
-|e|
-@ 0.095841
-|g|
-@ 0.047959
-|r|
-@ 0.120063
-|e|
-@ 0.712606
-|p|
-@ 0.287693
-| |
-@ 0.159862
-|S|
-@ 0.192029
-|Y|
-@ 0.216101
-|M|
-@ 0.191801
-|L|
-@ 0.191801
-|I|
-@ 0.183502
-|N|
-@ 0.191801
-|K|
-@ 0.227083
-. CR/^M LF/^J
-@ 0.023523
-|MULLE_SOURCETREE_|
-: Esc [ 1 ; 31 m
-& SGR: SELECT GRAPHIC RENDITION
-" Set bold text.
-" Set foreground color red.
-: Esc [ K
-& EL: ERASE IN LINE
-" Clear from the cursor to the end of the line.
-|SYMLINK|
-: Esc [ m
-& SGR: SELECT GRAPHIC RENDITION
-" Clear graphic rendition to defaults.
-: Esc [ K
-& EL: ERASE IN LINE
-" Clear from the cursor to the end of the line.
-|="YES"|
-. CR/^M LF/^J
-@ 0.861586
-: Esc ]
-& OSC: OPERATING SYSTEM COMMAND
-|0;nat@terodde: /tmp/foo|
-. BEL/^G
-|nat@terodde:/tmp/foo$ |
-@ 0.215673
-|m|
-@ 0.239866
-|u|
-@ 0.160144
-|l|
-@ 0.071919
-|l|
-@ 0.216408
-|e|
-@ 0.399846
-|-|
-@ 0.143794
-|s|
-@ 0.071978
-|d|
-@ 0.143979
-|e|
-@ 0.216094
-| |
-@ 0.208496
+@ 0.119886
 |f|
-@ 0.263774
+@ 0.184147
 |e|
-@ 0.448078
-|c|
-@ 0.383818
-. BS/^H
-: Esc [ K
-& EL: ERASE IN LINE
-" Clear from the cursor to the end of the line.
-@ 0.071550
+@ 0.071844
 |t|
-@ 0.136222
+@ 0.168067
 |c|
-@ 0.384989
+@ 0.292281
 |h|
-@ 0.532070
+@ 0.479001
 . CR/^M LF/^J
-@ 0.279339
+@ 0.026141
 : Esc [ 0 ; 36 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
@@ -2163,7 +2004,7 @@
 : Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
-|Symlinked |
+|Fetching |
 : Esc [ 0 ; 35 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
@@ -2179,14 +2020,14 @@
 : Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
-| to |
+| from |
 : Esc [ 0 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
 : Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
-|/home/src/srcO/mulle-c/mulle-utf|
+|https://github.com/mulle-c/mulle-utf/archive/latest.tar.gz|
 : Esc [ 0 ; 36 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
@@ -2194,11 +2035,12 @@
 : Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
+|.|
 : Esc [ 0 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
 . CR/^M LF/^J
-@ 0.288622
+@ 0.305579
 : Esc [ 0 ; 36 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
@@ -2206,7 +2048,37 @@
 : Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
-|Symlinked |
+|Using cached "/home/nat/.cache/mulle-fetch/archive/mulle-utf-latest.tar.gz"|-
+-| for |
+: Esc [ 0 ; 35 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+" Set foreground color magenta.
+: Esc [ 1 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set bold text.
+|https://github.com/mulle-c/mulle-utf/archive/latest.tar.gz|
+: Esc [ 0 ; 36 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+" Set foreground color cyan.
+: Esc [ 1 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set bold text.
+| ...|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+. CR/^M LF/^J
+@ 0.026140
+: Esc [ 0 ; 36 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+" Set foreground color cyan.
+: Esc [ 1 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set bold text.
+|Fetching |
 : Esc [ 0 ; 35 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
@@ -2222,14 +2094,14 @@
 : Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
-| to |
+| from |
 : Esc [ 0 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
 : Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
-|/home/src/srcO/mulle-c/mulle-allocator|
+|https://github.com/mulle-c/mulle-allocator/archive/latest.tar.gz|
 : Esc [ 0 ; 36 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
@@ -2237,11 +2109,12 @@
 : Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
+|.|
 : Esc [ 0 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
 . CR/^M LF/^J
-@ 0.079738
+@ 0.315904
 : Esc [ 0 ; 36 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
@@ -2249,7 +2122,37 @@
 : Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
-|Symlinked |
+|Using cached "/home/nat/.cache/mulle-fetch/archive/mulle-allocator-latest.t|-
+-|ar.gz" for |
+: Esc [ 0 ; 35 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+" Set foreground color magenta.
+: Esc [ 1 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set bold text.
+|https://github.com/mulle-c/mulle-allocator/archive/latest.tar.gz|
+: Esc [ 0 ; 36 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+" Set foreground color cyan.
+: Esc [ 1 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set bold text.
+| ...|
+: Esc [ 0 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+. CR/^M LF/^J
+@ 0.025971
+: Esc [ 0 ; 36 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
+" Set foreground color cyan.
+: Esc [ 1 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set bold text.
+|Fetching |
 : Esc [ 0 ; 35 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
@@ -2265,14 +2168,14 @@
 : Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
-| to |
+| from |
 : Esc [ 0 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
 : Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
-|/home/src/srcO/mulle-c/mulle-c11|
+|https://github.com/mulle-c/mulle-c11/archive/latest.tar.gz|
 : Esc [ 0 ; 36 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
@@ -2280,114 +2183,42 @@
 : Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
+|.|
 : Esc [ 0 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
 . CR/^M LF/^J
-@ 0.995687
-: Esc ]
-& OSC: OPERATING SYSTEM COMMAND
-|0;nat@terodde: /tmp/foo|
-. BEL/^G
-|nat@terodde:/tmp/foo$ |
-@ 0.119556
-|l|
-@ 0.488672
-|s|
-@ 0.002837
-. CR/^M LF/^J
-@ 0.000555
-: Esc [ 0 m
+@ 0.140376
+: Esc [ 0 ; 36 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
-: Esc [ 1 ; 34 m
-& SGR: SELECT GRAPHIC RENDITION
-" Set bold text.
-" Set foreground color blue.
-|cmake|
-: Esc [ 0 m
-& SGR: SELECT GRAPHIC RENDITION
-" Clear graphic rendition to defaults.
-|  CMakeLists.txt  README.md  |
-: Esc [ 1 ; 34 m
-& SGR: SELECT GRAPHIC RENDITION
-" Set bold text.
-" Set foreground color blue.
-|src|
-: Esc [ 0 m
-& SGR: SELECT GRAPHIC RENDITION
-" Clear graphic rendition to defaults.
-|  |
-: Esc [ 1 ; 34 m
-& SGR: SELECT GRAPHIC RENDITION
-" Set bold text.
-" Set foreground color blue.
-|stash|
-: Esc [ 0 m
-& SGR: SELECT GRAPHIC RENDITION
-" Clear graphic rendition to defaults.
-. CR/^M LF/^J
-@ 0.892486
-: Esc ]
-& OSC: OPERATING SYSTEM COMMAND
-|0;nat@terodde: /tmp/foo|
-. BEL/^G
-|nat@terodde:/tmp/foo$ |
-@ 0.575768
-|s|
-@ 0.231746
-. BS/^H
-: Esc [ K
-& EL: ERASE IN LINE
-" Clear from the cursor to the end of the line.
-@ 0.616322
-. BEL/^G
-@ 0.832216
-|l|
-@ 0.119526
-|s|
-@ 0.119915
-| |
-@ 0.160235
-|s|
-@ 0.103232
-|t|
-@ 0.312988
-|ash/|
-@ 0.002818
-. CR/^M LF/^J
-@ 0.000589
-: Esc [ 0 m
-& SGR: SELECT GRAPHIC RENDITION
-" Clear graphic rendition to defaults.
-: Esc [ 1 ; 36 m
-& SGR: SELECT GRAPHIC RENDITION
-" Set bold text.
 " Set foreground color cyan.
-|mulle-allocator|
-: Esc [ 0 m
-& SGR: SELECT GRAPHIC RENDITION
-" Clear graphic rendition to defaults.
-|  |
-: Esc [ 1 ; 36 m
+: Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
-" Set foreground color cyan.
-|mulle-c11|
-: Esc [ 0 m
+|Using cached "/home/nat/.cache/mulle-fetch/archive/mulle-c11-latest.tar.gz"|-
+-| for |
+: Esc [ 0 ; 35 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
-|  |
-: Esc [ 1 ; 36 m
+" Set foreground color magenta.
+: Esc [ 1 m
 & SGR: SELECT GRAPHIC RENDITION
 " Set bold text.
+|https://github.com/mulle-c/mulle-c11/archive/latest.tar.gz|
+: Esc [ 0 ; 36 m
+& SGR: SELECT GRAPHIC RENDITION
+" Clear graphic rendition to defaults.
 " Set foreground color cyan.
-|mulle-utf|
+: Esc [ 1 m
+& SGR: SELECT GRAPHIC RENDITION
+" Set bold text.
+| ...|
 : Esc [ 0 m
 & SGR: SELECT GRAPHIC RENDITION
 " Clear graphic rendition to defaults.
 . CR/^M LF/^J
-@ 0.744536
+@ 2.000910
 : Esc ]
 & OSC: OPERATING SYSTEM COMMAND
 |0;nat@terodde: /tmp/foo|
