@@ -6,6 +6,8 @@
 * provides a per-project build environment
 * does recursive dependency management
 * transforms file-system structure into project files
+* creates source files from templates
+* loads build instructions for third party dependencies from github 
 
 
 <script id="asciicast-223917"
@@ -16,49 +18,31 @@
 
 ## Should you be interested in MulleSDE ?
 
-Are you developing in C, C++ or Objective ? Then MAYBE.
+Are you developing in C, C++ or Objective C?
 
-Are you tied to a single platform and do you always develop in the same
-language and development environment (aka IDE) ? Then NO.
+Do you hate being tied to your IDE vendor ?
 
-Otherwise install [mulle-sde](//github.com/mulle-sde/mulle-sde) and try the
-following commands:
+Are you using docker to keep project dependencies separate but you are looking for something better ?
 
-```bash
-mulle-sde init -d foo -m mulle-sde/c-developer none
-mulle-sde foo
-dependency add --github mulle-core mulle-sprintf
-craft
-ls -R dependency
-```
+Would you like your projects to build not only next year but also in the next decades ?
 
-If you think "So what ?", then the answer is NO.
+Then install [mulle-sde](//github.com/mulle-sde/mulle-sde) and give it a try!
 
-
-## Should you use it ?
-
-* if you want to develop with [mulle-objc](//mulle-objc.github.io): YES
-* if you want to use it just to grab and build some dependencies (project type *none*): MAYBE
-* if you have time and energy to look into bash sources, to look for hidden options and to see why usages are out of date: GO FOR IT
-* if you just use the stable tools (see below): YES
-* if you generally need a lot of help to get your things together:NO
 
 ## The snags
 
 The whole thing is not badly documented. There is even a [Wiki](https://github.com/mulle-sde/mulle-sde/wiki) with
 quite a bit of content. But there are snags.
 
-1. The project is still fairly unstable. I seem to keep rewriting stuff. Some areas are stable, but some areas aren't.
-2. There isn't a proper usage for every command yet. Some of the usages are already outdated.
-3. There are some limitations with respect to platform differentiation via `${MULLE_UNAME}`. E.g. arch linux vs debian linux.
-4. The version checking like "fetch me the latest foo with version < 2" isn't implemented, but probably will be.
-
-On a day to day basis, MulleSDE though is a joy to use and my favorite IDE, because it saves me so much time.
+1. There isn't a proper usage for every command yet. Some of the usages are not complete. If you can read bash source, it's very helpful.
+2. There are some limitations with respect to platform differentiation via `${MULLE_UNAME}`. E.g. "arch linux" vs "debian linux".
+3. It's completely different to anything you have used yet.
 
 
-## Presumed to be stable
+## Baby steps
 
-These tools look like they are complete and useful on their own
+These tools look can be useful on their own. When familiarizing with them, you will get an idea what *mulle-sde* 
+can do for you:
 
 Tool                                                  | Description
 ------------------------------------------------------|-------------------------
