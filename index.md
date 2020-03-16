@@ -1,12 +1,16 @@
 # MulleSDE
 
+MulleSDE is an IDE for the commandline. There are no graphical components.
+Amongst a few other things it
+
+* provides a per-project build and dependency environment
 * fetches remote files and place them anywhere in your project tree
+* fetches dependencies (archives and git repositories) and builds them locally
+* does recursive dependency management
+* creates source files from templates
+* transforms file-system structure into project files
 * interfaces with various build systems
 * parallelizes C project builds
-* provides a per-project build environment
-* does recursive dependency management
-* transforms file-system structure into project files
-* creates source files from templates
 * loads build instructions for third party dependencies from github 
 
 
