@@ -45,7 +45,7 @@ quite a bit of content. But there are snags.
 
 ## Baby steps
 
-These tools look can be useful on their own. When familiarizing with them, you will get an idea what *mulle-sde* 
+These tools can be useful on their own. When familiarizing with them, you will get an idea what *mulle-sde* 
 can do for you:
 
 Tool                                                  | Description
