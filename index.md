@@ -12,7 +12,7 @@ Amongst a few other things it
 * interfaces with various build systems
 * parallelizes C project builds
 * loads build instructions for third party dependencies from github 
-
+* its scriptable and extensible by design
 
 <script id="asciicast-223917"
         src="https://asciinema.org/a/223917.js"
