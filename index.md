@@ -39,9 +39,9 @@ Then install [mulle-sde](//github.com/mulle-sde/mulle-sde) and give it a try!
 The whole thing is not badly documented. There is even a [Wiki](https://github.com/mulle-sde/mulle-sde/wiki) with
 quite a bit of content. But there are snags.
 
-1. There isn't a proper usage for every command yet. Some of the usages are not complete. If you can read bash source, it's very helpful.
-2. There are some limitations with respect to platform differentiation via `${MULLE_UNAME}`. E.g. "arch linux" vs "debian linux".
-3. It's completely different to anything you have used yet.
+There isn't a proper usage for every command yet. Some of the usages are not complete. If you can read bash source, it's very helpful.
+There are some limitations with respect to platform differentiation via `${MULLE_UNAME}`. E.g. "arch linux" vs "debian linux".
+It's completely different to anything you have used yet.
 
 
 ## Baby steps
