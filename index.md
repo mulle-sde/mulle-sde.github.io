@@ -40,7 +40,9 @@ The whole thing is not badly documented. There is even a [Wiki](https://github.c
 quite a bit of content. But there are snags.
 
 There isn't a proper usage for every command yet. Some of the usages are not complete. If you can read bash source, it's very helpful.
+
 There are some limitations with respect to platform differentiation via `${MULLE_UNAME}`. E.g. "arch linux" vs "debian linux".
+
 It's completely different to anything you have used yet.
 
 
