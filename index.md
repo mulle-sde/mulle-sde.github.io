@@ -1,18 +1,17 @@
 # MulleSDE
 
-MulleSDE is an IDE for the commandline. There are no graphical components.
+MulleSDE is an IDE and package (dependenc) manager for the commandline. There are no graphical components.
 Amongst a few other things it
 
-* provides a per-project build and dependency environment
+* provides a per-project environment
 * fetches remote files and place them anywhere in your project tree
-* fetches dependencies (archives and git repositories) and builds them locally
-* does recursive dependency management
+* fetches and builds dependencies (archives and git repositories) recursively and installs them locally to the project
 * creates source files from templates
 * transforms file-system structure into project files
 * interfaces with various build systems
-* parallelizes C project builds
+* parallelizes cmake project builds
 * loads build instructions for third party dependencies from github 
-* its scriptable and extensible by design
+* its scriptable and extensible
 
 <script id="asciicast-223917"
         src="https://asciinema.org/a/223917.js"
@@ -25,6 +24,8 @@ Amongst a few other things it
 Are you developing in C, C++ or Objective C?
 
 Do you hate being tied to your IDE vendor ?
+
+Do you want to develop for MacOS, FreeBSD, Linux, Windows all with the same IDE ?
 
 Are you using docker to keep project dependencies separate but you are looking for something better ?
 
