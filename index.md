@@ -1,6 +1,6 @@
 # MulleSDE
 
-MulleSDE is an IDE and package (dependenc) manager for the commandline. There are no graphical components.
+MulleSDE is an IDE and dependency (package) manager for the commandline. There are no graphical components.
 Amongst a few other things it
 
 * provides a per-project environment
@@ -11,7 +11,7 @@ Amongst a few other things it
 * interfaces with various build systems
 * parallelizes cmake project builds
 * loads build instructions for third party dependencies from github 
-* its scriptable and extensible
+* is scriptable and extensible
 
 <script id="asciicast-223917"
         src="https://asciinema.org/a/223917.js"
