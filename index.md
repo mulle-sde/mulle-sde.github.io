@@ -32,11 +32,11 @@ to install mulle-sde.
 ## Quick Start
 
 If you want to compile some dependencies without setting up a mulle-sde project, 
-you can do an *install* with an archive. Here is an example where the latest *mulle-allocator*
+you can do an *install* with an archive. Here is an example where the latest *mulle-buffer*
 and its dependencies is installed into `/tmp/foo`:
 
 ```
-mulle-sde install --prefix /tmp/foo https://github.com/mulle-c/mulle-allocator/archive/latest.tar.gz
+mulle-sde install --prefix /tmp/foo https://github.com/mulle-c/mulle-buffer/archive/latest.tar.gz
 ```
 
 If you don't want to use the mulle-sde project management features, but would like to 
@@ -46,9 +46,10 @@ keep the dependencies local to your project, you can use a `none` project type:
 mulle-sde init none
 mulle-sde dependency add --c --github mulle-c mulle-allocator
 mulle-sde craft
+mulle-sde linkorder
 ```
 
-This will create four folders:
+This will create four folders with the compiled mulle-allocator in `dependency/lib`
 
 ```
 .
@@ -56,6 +57,14 @@ This will create four folders:
 ├── kitchen      # temporary build folder
 ├── .mulle       # internal mulle-sde maintenance
 └── stash        # download dependencies
+```
+
+and it will give you the link options for your platform in the correct order:
+
+```
+-L./dependency/lib
+-lmulle-buffer
+-lmulle-allocator
 ```
 
 ## In action
