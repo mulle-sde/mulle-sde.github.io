@@ -1,16 +1,11 @@
 # MulleSDE
 
-Are you developing in C, C++ or Objective C?
-
-Do you hate being tied to your IDE vendor ?
-
-Do you want to develop for MacOS, FreeBSD, Linux, Windows all with the same IDE ?
-
-Are you using docker to keep project dependencies separate but you are looking for something better ?
-
-Would you like your projects to build not only next year but also in the next decades ?
-
-Then install [mulle-sde](//github.com/mulle-sde/mulle-sde) and give it a try!
+* ##### Are you developing in C, C++ or Objective C?
+* ##### Do you hate being tied to your IDE vendor ?
+* ##### Do you want to develop for MacOS, FreeBSD, Linux, Windows all with the same IDE ?
+* ##### Are you using docker to keep project dependencies separate but you are looking for something better ?
+* ##### Would you like your projects to build not only next year but also in the next decades ?
+* ##### Then install [mulle-sde](//github.com/mulle-sde/mulle-sde) and give it a try!
 
 ## About 
 
