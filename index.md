@@ -44,12 +44,12 @@ keep the dependencies local to your project, you can use a `none` project type:
 
 ```
 mulle-sde init none
-mulle-sde dependency add --c --github mulle-c mulle-allocator
+mulle-sde dependency add --c --github mulle-c mulle-buffer
 mulle-sde craft
 mulle-sde linkorder
 ```
 
-This will create four folders with the compiled mulle-allocator in `dependency/lib`
+This will create four folders with the compiled results:
 
 ```
 .
