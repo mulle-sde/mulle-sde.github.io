@@ -1,40 +1,3 @@
-# MulleSDE
-
-* ##### Are you developing in C, C++ or Objective C?
-* ##### Do you hate being tied to your IDE vendor ?
-* ##### Do you want to develop for MacOS, FreeBSD, Linux, Windows all with the same IDE ?
-* ##### Are you using docker to keep project dependencies separate but you are looking for something better ?
-* ##### Would you like your projects to build not only next year but also in the next decades ?
-* ##### Then install [mulle-sde](//github.com/mulle-sde/mulle-sde) and give it a try!
-
-## About 
-
-MulleSDE is an IDE and dependency (package) manager for the commandline. There are no graphical components.
-Amongst a few other things it
-
-* provides a per-project environment
-* fetches remote files and place them anywhere in your project tree
-* fetches and builds dependencies (archives and git repositories) recursively and installs them locally to the project or at a chose place
-* creates source files from templates
-* transforms file-system structure into project files
-* interfaces with various build systems
-* parallelizes cmake project builds
-* loads build instructions for third party dependencies from github 
-* is scriptable and extensible
-
-
-## Install
-
-See [mulle-sde-developer](//github.com/mulle-sde/mulle-sde-developer) how
-to install mulle-sde.
-
-
-## Quick Start
-
-If you want to compile some dependencies without setting up a mulle-sde project, 
-you can do an *install* with an archive. Here is an example where the latest *mulle-buffer*
-and its dependencies is installed into `/tmp/foo`:
-
 ```
 mulle-sde install --prefix /tmp/foo https://github.com/mulle-c/mulle-buffer/archive/latest.tar.gz
 ```
@@ -77,7 +40,7 @@ and it will give you the link options for your platform in the correct order:
 
 ## Baby steps
 
-These tools can be useful on their own. When familiarizing with them, you will get an idea what *mulle-sde* 
+These tools can be useful on their own. When you get familiar with them, you will get an idea what *mulle-sde* 
 can do for you:
 
 Tool                                                  | Description
