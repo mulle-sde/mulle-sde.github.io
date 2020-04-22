@@ -6,7 +6,7 @@
 * <b>Are you using docker to keep project dependencies separate but you are looking for something better ?</b>
 * <b>Would you like your projects to build not only next year but also in the next decades ?</b>
 
-#### Then install [mulle-sde](//github.com/mulle-sde/mulle-sde) and give it a try! **
+#### Then install [mulle-sde](//github.com/mulle-sde/mulle-sde) and give it a try! 
 
 ## About
 
