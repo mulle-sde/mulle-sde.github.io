@@ -23,6 +23,12 @@ Amongst a few other things it
 * loads build instructions for third party dependencies from github
 * is scriptable and extensible
 
+## Documentation
+
+The [mulle-sde WiKi](//github.com/mulle-sde/mulle-sde/wiki) contains quite a lot of information, 
+that doesn't fit into the usage texts of the various mulle-sde commands. 
+Otherwise mulle-sde strives to be self-explanatory through help texts and comments in files.
+
 
 ## Install
 
