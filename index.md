@@ -25,9 +25,9 @@ Amongst a few other things it
 
 ## Documentation
 
-The [mulle-sde WiKi](//github.com/mulle-sde/mulle-sde/wiki) contains quite a lot of information, 
-that doesn't fit into the usage texts of the various mulle-sde commands. 
-Otherwise mulle-sde strives to be self-explanatory through help texts and comments in files.
+The [mulle-sde WiKi](//github.com/mulle-sde/mulle-sde/wiki) has some introductory and
+in-depth information, that doesn't fit into the help texts of the various mulle-sde commands. 
+Otherwise mulle-sde strives to be self-explanatory through help texts and file comments.
 
 
 ## Install
