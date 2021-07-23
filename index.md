@@ -94,4 +94,4 @@ Tool                                                  | Description
 [mulle-make](//github.com/mulle-sde/mulle-make)       | detect build method and build a project
 [mulle-match](//github.com/mulle-sde/mulle-match)     | categorize files and make files
 [mulle-monitor](//github.com/mulle-sde/mulle-monitor) | monitor a filesystem folder and trigger commands on change
-
+[mulle-semver](//github.com/mulle-sde/mulle-semver)   | semantic versioning support
