@@ -122,8 +122,7 @@
          <article class="pane" data-title="01 — edit">
             <h3>Edit</h3>
             <p>Set up the editor of your choice with one command, or just use
-            any desktop GUI or the terminal. mulle-sde never ties you to an
-            IDE vendor.</p>
+            any desktop GUI or the terminal.</p>
             <pre class="pane-code"><code><span class="p">$</span> mulle-sde edit</code></pre>
          </article>
 
@@ -131,7 +130,7 @@
             <h3>Reflect</h3>
             <p>Changes in the filesystem are picked up and turned into build
             system files and headers. Add, move or rename a source file, then
-            reflect — no project file juggling.</p>
+            reflect — the build files update themselves.</p>
             <pre class="pane-code"><code><span class="p">$</span> mulle-sde reflect</code></pre>
          </article>
 
@@ -148,8 +147,8 @@
    <!-- ============ WHAT IT DOES ============ -->
    <section class="section" id="does">
       <h2 class="section-title">What it does</h2>
-      <p class="section-lead">MulleSDE is not a single command you learn — it is
-      a way of working. Here is the functionality, not the command list.</p>
+      <p class="section-lead">MulleSDE is a way of working. Here is the
+      functionality it puts at your disposal.</p>
 
       <div class="panes panes-3">
          <article class="pane" data-title="environment">
@@ -214,9 +213,8 @@
          <article class="pane" data-title="durable">
             <span class="pane-icon" aria-hidden="true">⌛</span>
             <h3>Built to last decades</h3>
-            <p>No IDE lock-in, no opaque project databases, no cloud. Plain
-            files, plain tools and a pure command-line interface mean a project
-            you can still build years from now.</p>
+            <p>Plain files, plain tools and a pure command-line interface mean
+            a project you can still build years from now.</p>
          </article>
 
          <article class="pane" data-title="ai">
@@ -254,7 +252,7 @@
          </div>
 
          <aside class="pane pane-plain pane-note">
-            <h3>No GUI. No container required.</h3>
+            <h3>Pure command line.</h3>
             <p>MulleSDE lives entirely on the command line, so it composes with
             whatever you already use: <code>git</code>, <code>make</code>,
             <code>cmake</code>, your shell, your editor, your CI.</p>
@@ -279,8 +277,8 @@
              <h3><span class="step-num">1</span> Run the mulle-sde-developer installer</h3>
              <p><code>installer-all</code> fetches the required commands and
              installs <a href="https://github.com/mulle-sde/mulle-sde-developer" rel="noopener">mulle-sde-developer</a>
-             together with the whole mulle-sde toolchain — not just bare
-             mulle-sde. It installs into <code>/usr/local</code> by default:</p>
+             together with the whole mulle-sde toolchain. It installs into
+             <code>/usr/local</code> by default:</p>
              <pre><code><span class="p">$</span> curl -L -O 'https://raw.githubusercontent.com/mulle-sde/mulle-sde/master/bin/installer-all' \
    &amp;&amp; chmod 755 installer-all \
    &amp;&amp; sudo SDE_PROJECTS="mulle-sde-developer;latest" ./installer-all /usr/local</code></pre>
