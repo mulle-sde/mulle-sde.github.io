@@ -463,6 +463,7 @@ body::after {
    color: var(--text);
 }
 .steps pre .p { color: var(--green); }
+.pane pre + p { margin-top: 0.9rem; }
 
 .section-note { margin-top: 2rem; color: var(--faint); font-size: 0.9rem; }
 

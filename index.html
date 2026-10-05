@@ -267,27 +267,29 @@
    <!-- ============ INSTALL ============ -->
    <section class="section" id="install">
       <h2 class="section-title">Install</h2>
-      <p class="section-lead">MulleSDE bootstraps itself and its own toolchain.
-      Once installed, you rarely touch the lower layers directly.</p>
+      <p class="section-lead">The recommended route is to install from the proper developer environment,
+      <a href="https://github.com/mulle-sde/mulle-sde-developer" rel="noopener">mulle-sde-developer</a>.
+      Its README will list the prerequisites per platform — compiler tools,
+      <code>git</code>, <code>curl</code>, <code>cmake</code> and
+      <code>sudo</code> — so check those first if you are unsure what is
+      already installed.</p>
 
       <ol class="steps">
           <li class="pane" data-title="step 1">
-             <h3><span class="step-num">1</span> Get the toolchain</h3>
-             <p>The recommended route is the developer environment,
-             <a href="https://github.com/mulle-sde/mulle-sde-developer" rel="noopener">mulle-sde-developer</a>.
-             It installs mulle-sde together with everything it needs, and its
-             README carries the platform-specific instructions — start there if
-             you are unsure which toolchain you have.</p>
+             <h3><span class="step-num">1</span> Run the mulle-sde-developer installer</h3>
+             <p><code>installer-all</code> fetches the required commands and
+             installs <a href="https://github.com/mulle-sde/mulle-sde-developer" rel="noopener">mulle-sde-developer</a>
+             together with the whole mulle-sde toolchain — not just bare
+             mulle-sde. It installs into <code>/usr/local</code> by default:</p>
+             <pre><code><span class="p">$</span> curl -L -O 'https://raw.githubusercontent.com/mulle-sde/mulle-sde/master/bin/installer-all' \
+   &amp;&amp; chmod 755 installer-all \
+   &amp;&amp; sudo SDE_PROJECTS="mulle-sde-developer;latest" ./installer-all /usr/local</code></pre>
+             <p>Without <strong>sudo</strong>, install under your home instead
+             with <code>./installer-all ~ no</code>, then make sure
+             <code>${HOME}/bin</code> is on your <code>PATH</code>.</p>
           </li>
          <li class="pane" data-title="step 2">
-            <h3><span class="step-num">2</span> Or install directly</h3>
-            <p>The one-liner installs only the latest mulle-sde into
-            <code>/usr/local</code> (with <strong>sudo</strong>):</p>
-            <pre><code><span class="p">$</span> curl -L 'https://github.com/mulle-sde/mulle-sde/archive/latest.tar.gz' \
-   | tar xfz - &amp;&amp; cd 'mulle-sde-latest' &amp;&amp; sudo ./bin/installer /usr/local</code></pre>
-         </li>
-         <li class="pane" data-title="step 3">
-            <h3><span class="step-num">3</span> Start a project</h3>
+            <h3><span class="step-num">2</span> Start a project</h3>
             <p>Create a project, pick a type at the prompt, and craft it:</p>
             <pre><code><span class="p">$</span> mkdir myproject &amp;&amp; cd myproject
 <span class="p">$</span> mulle-sde init
