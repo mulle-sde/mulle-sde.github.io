@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <title>mulle-sde — The Unix IDE, written in bash</title>
+   <meta name="description" content="mulle-sde is a command-line IDE and dependency manager built for C and Objective-C development (C++ very likely works too): a virtualenv and npm for C languages. One uniform setup across Android, BSDs, Linux, macOS, SunOS and Windows.">
+   <meta name="keywords" content="C, C++, Objective-C, IDE, command line, dependency manager, package manager, cross-platform, bash, build system, cmake, make, meson, virtualenv, npm, mulle-sde, mulle-env, mulle-sourcetree">
+   <meta name="robots" content="index,follow">
+   <meta name="author" content="Mulle kybernetiK (Nat!)">
+
+   <!-- social -->
+   <meta property="og:title" content="mulle-sde — The Unix IDE, written in bash">
+   <meta property="og:description" content="A command-line IDE and dependency manager for C languages. Edit. Reflect. Craft.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://mulle-sde.github.io/">
+   <meta property="og:site_name" content="mulle-sde">
+   <meta property="og:image" content="https://mulle-sde.github.io/logo.png">
+   <meta name="twitter:card" content="summary">
+   <meta name="twitter:title" content="mulle-sde — The Unix IDE, written in bash">
+   <meta name="twitter:description" content="A command-line IDE and dependency manager for C languages. Edit. Reflect. Craft.">
+   <meta name="twitter:image" content="https://mulle-sde.github.io/logo.png">
+
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" type="image/png" href="logo.png">
+   <link rel="apple-touch-icon" href="logo.png">
+
+   <!-- structured data for machines -->
+   <script type="application/ld+json">
+   {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "mulle-sde",
+      "alternateName": "MulleSDE",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Android, BSD, Linux, macOS, SunOS, Windows",
+      "description": "Command-line IDE and dependency manager for C and Objective-C development (C++ very likely works too). A per-project virtual environment with an Edit-Reflect-Craft development cycle, recursive dependency fetching and building, template generation, and build-system abstraction.",
+      "programmingLanguage": "Shell",
+      "license": "https://opensource.org/licenses/BSD-3-Clause",
+      "url": "https://mulle-sde.github.io/",
+      "codeRepository": "https://github.com/mulle-sde/mulle-sde",
+      "author": { "@type": "Person", "name": "Nat!" }
+   }
+   </script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+   <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top">
+         <span class="brand-mark" aria-hidden="true">&gt;_</span>
+         <span class="brand-name">mulle-sde</span>
+      </a>
+      <ul class="nav-links">
+         <li><a href="#cycle">The cycle</a></li>
+         <li><a href="#does">What it does</a></li>
+         <li><a href="#platforms">Platforms</a></li>
+         <li><a href="#install">Install</a></li>
+         <li><a href="#learn">Learn</a></li>
+      </ul>
+      <a class="btn btn-small btn-ghost" href="https://github.com/mulle-sde/mulle-sde" rel="noopener">GitHub ↗</a>
+   </nav>
+</header>
+
+<main id="main">
+
+   <!-- ============ HERO ============ -->
+   <section class="hero" id="top">
+      <img class="hero-logo" src="logo.png" alt="MulleSDE logo" width="116" height="116">
+      <p class="eyebrow">cross-platform · command-line · bash</p>
+      <h1 class="hero-title">The Unix IDE.<br>Written in bash.</h1>
+      <p class="hero-sub">
+         <strong>mulle-sde</strong> is a command-line IDE and dependency manager
+         built for <strong>C and Objective-C</strong> development (C++ very
+         likely works too). Think <em>npm</em> or <em>virtualenv</em>
+         for C languages: one uniform setup that gets you going in seconds,
+         with a project that still builds next year — and the decade after.
+      </p>
+
+      <div class="hero-actions">
+         <a class="btn btn-primary" href="#install">Install it</a>
+         <a class="btn btn-ghost" href="https://www.mulle-kybernetik.com/de-re-mulle-sde/" rel="noopener">Read the guide</a>
+         <a class="btn btn-ghost" href="https://github.com/mulle-sde/mulle-sde" rel="noopener">View on GitHub</a>
+      </div>
+
+      <div class="terminal">
+         <div class="terminal-bar">
+            <span class="terminal-title">mulle-sde — sh</span>
+         </div>
+         <pre class="terminal-body"><code><span class="p">~ $</span> mkdir myproject &amp;&amp; cd myproject
+<span class="p">~/myproject $</span> mulle-sde init
+<span class="cm">#  pick a project type, get a working environment</span>
+<span class="p">~/myproject $</span> mulle-sde craft
+<span class="cm">#  fetch, build and install dependencies, then the project</span>
+<span class="p">~/myproject $</span> mulle-sde run
+<span class="ok">Hello, world!</span>
+<span class="p">~/myproject $</span> <span class="cursor" aria-hidden="true"></span></code></pre>
+      </div>
+
+      <ul class="chips" aria-label="Project highlights">
+         <li>C &amp; Objective-C first</li>
+         <li>any editor or IDE</li>
+         <li>dependencies resolved recursively</li>
+         <li>no daemon, no container</li>
+         <li>plain files, no lock-in</li>
+         <li>built to survive the decade</li>
+      </ul>
+   </section>
+
+   <!-- ============ CYCLE ============ -->
+   <section class="section" id="cycle">
+      <h2 class="section-title">Edit &rarr; Reflect &rarr; Craft</h2>
+      <p class="section-lead">One simple principle runs through everything. You
+      work with files the way you always have; mulle-sde keeps the build
+      machinery in step and does the heavy lifting of fetching and building
+      dependencies.</p>
+
+      <div class="panes">
+         <article class="pane" data-title="01 — edit">
+            <h3>Edit</h3>
+            <p>Set up the editor of your choice with one command, or just use
+            any desktop GUI or the terminal. mulle-sde never ties you to an
+            IDE vendor.</p>
+            <pre class="pane-code"><code><span class="p">$</span> mulle-sde edit</code></pre>
+         </article>
+
+         <article class="pane" data-title="02 — reflect">
+            <h3>Reflect</h3>
+            <p>Changes in the filesystem are picked up and turned into build
+            system files and headers. Add, move or rename a source file, then
+            reflect — no project file juggling.</p>
+            <pre class="pane-code"><code><span class="p">$</span> mulle-sde reflect</code></pre>
+         </article>
+
+         <article class="pane" data-title="03 — craft">
+            <h3>Craft</h3>
+            <p>Fetch dependencies, build them and install them local to your
+            project. Then build the project itself. Everything reproducible,
+            everything in one tree.</p>
+            <pre class="pane-code"><code><span class="p">$</span> mulle-sde craft</code></pre>
+         </article>
+      </div>
+   </section>
+
+   <!-- ============ WHAT IT DOES ============ -->
+   <section class="section" id="does">
+      <h2 class="section-title">What it does</h2>
+      <p class="section-lead">MulleSDE is not a single command you learn — it is
+      a way of working. Here is the functionality, not the command list.</p>
+
+      <div class="panes panes-3">
+         <article class="pane" data-title="environment">
+            <span class="pane-icon" aria-hidden="true">▚</span>
+            <h3>A virtualenv for C</h3>
+            <p>Every project gets its own isolated, per-project environment:
+            settings, paths and dependencies live with the project instead of
+            polluting your machine. Separate projects stop fighting over
+            versions.</p>
+         </article>
+
+         <article class="pane" data-title="dependencies">
+            <span class="pane-icon" aria-hidden="true">⇩</span>
+            <h3>Dependencies, resolved</h3>
+            <p>Fetch archives and git repositories — recursively — build them
+            and install them locally or wherever you choose. Build instructions
+            for third-party projects are loaded from GitHub, so recipes travel
+            with the ecosystem.</p>
+         </article>
+
+         <article class="pane" data-title="build">
+            <span class="pane-icon" aria-hidden="true">⚙</span>
+            <h3>Filesystem &rarr; build files</h3>
+            <p>Your directory structure <em>is</em> the project. mulle-sde
+            transforms it into the files your build system wants, and speaks to
+            many of them — CMake, make, meson, autoconf and more — and
+            parallelizes the build.</p>
+         </article>
+
+         <article class="pane" data-title="entities">
+            <span class="pane-icon" aria-hidden="true">✦</span>
+            <h3>Source from templates</h3>
+            <p>Create well-formed source files from templates instead of
+            copying stale boilerplate. New classes, headers and executables
+            start consistent every time.</p>
+         </article>
+
+         <article class="pane" data-title="fetch">
+            <span class="pane-icon" aria-hidden="true">⇄</span>
+            <h3>Fetch anything, anywhere</h3>
+            <p>Remote files and repositories can be pulled down and placed
+            anywhere in your project tree — vendoring, generated assets or
+            external sources, all tracked by the project.</p>
+         </article>
+
+         <article class="pane" data-title="extend">
+            <span class="pane-icon" aria-hidden="true">⧉</span>
+            <h3>Scriptable &amp; extensible</h3>
+            <p>Extensions add languages and build tools, callbacks hook into
+            reflection. It is bash all the way down, so you can read it, change
+            it and automate it without a build step of its own.</p>
+         </article>
+
+         <article class="pane" data-title="portable">
+            <span class="pane-icon" aria-hidden="true">◈</span>
+            <h3>Cross-platform by design</h3>
+            <p>The same setup and the same workflow whether you are on Linux,
+            macOS, a BSD, SunOS, Android or Windows. Keep the dependency
+            isolation of Docker without the container overhead.</p>
+         </article>
+
+         <article class="pane" data-title="durable">
+            <span class="pane-icon" aria-hidden="true">⌛</span>
+            <h3>Built to last decades</h3>
+            <p>No IDE lock-in, no opaque project databases, no cloud. Plain
+            files, plain tools and a pure command-line interface mean a project
+            you can still build years from now.</p>
+         </article>
+
+         <article class="pane" data-title="ai">
+            <span class="pane-icon" aria-hidden="true">☰</span>
+            <h3>A companion for AIs</h3>
+            <p>Self-explanatory by design: help texts, howtos and file comments
+            describe the workflow, and the filesystem-driven model is
+            deterministic — a good fit for both humans and coding agents.</p>
+         </article>
+      </div>
+   </section>
+
+   <!-- ============ PLATFORMS ============ -->
+   <section class="section" id="platforms">
+      <h2 class="section-title">One setup, everywhere</h2>
+      <p class="section-lead">The point of mulle-sde is uniformity. Wherever you
+      develop, the commands, the environment and the results are the same.</p>
+
+      <div class="panes panes-2">
+         <div class="pane pane-plain">
+            <table class="matrix">
+               <caption class="sr-only">Supported platforms</caption>
+               <thead>
+                  <tr><th>Platform family</th><th>Notes</th></tr>
+               </thead>
+               <tbody>
+                  <tr><td>Linux</td><td>Primary development platform</td></tr>
+                  <tr><td>macOS</td><td>Native toolchains, no Xcode project needed</td></tr>
+                  <tr><td>BSD</td><td>FreeBSD and friends</td></tr>
+                  <tr><td>Windows</td><td>MinGW and WSL</td></tr>
+                  <tr><td>Android</td><td>Cross-compilation targets</td></tr>
+                  <tr><td>SunOS</td><td>Illumos / Solaris lineage</td></tr>
+               </tbody>
+            </table>
+         </div>
+
+         <aside class="pane pane-plain pane-note">
+            <h3>No GUI. No container required.</h3>
+            <p>MulleSDE lives entirely on the command line, so it composes with
+            whatever you already use: <code>git</code>, <code>make</code>,
+            <code>cmake</code>, your shell, your editor, your CI.</p>
+            <p>It gives you the separation Docker gives you — per-project
+            dependencies — without a daemon and without rebuilding the world.</p>
+         </aside>
+      </div>
+   </section>
+
+   <!-- ============ INSTALL ============ -->
+   <section class="section" id="install">
+      <h2 class="section-title">Install</h2>
+      <p class="section-lead">MulleSDE bootstraps itself and its own toolchain.
+      Once installed, you rarely touch the lower layers directly.</p>
+
+      <ol class="steps">
+         <li class="pane" data-title="step 1">
+            <h3><span class="step-num">1</span> Get the toolchain</h3>
+            <p>Install the mulle-sde developer environment. It sets up
+            mulle-sde together with the required dependencies:</p>
+            <pre><code><span class="cm"># see mulle-sde-developer for your platform</span>
+<span class="p">$</span> open https://github.com/mulle-sde/mulle-sde-developer</code></pre>
+         </li>
+         <li class="pane" data-title="step 2">
+            <h3><span class="step-num">2</span> Or install directly</h3>
+            <p>The one-liner installs only the latest mulle-sde into
+            <code>/usr/local</code> (with <strong>sudo</strong>):</p>
+            <pre><code><span class="p">$</span> curl -L 'https://github.com/mulle-sde/mulle-sde/archive/latest.tar.gz' \
+   | tar xfz - &amp;&amp; cd 'mulle-sde-latest' &amp;&amp; sudo ./bin/installer /usr/local</code></pre>
+         </li>
+         <li class="pane" data-title="step 3">
+            <h3><span class="step-num">3</span> Start a project</h3>
+            <p>Create a project, pick a type at the prompt, and craft it:</p>
+            <pre><code><span class="p">$</span> mkdir myproject &amp;&amp; cd myproject
+<span class="p">$</span> mulle-sde init
+<span class="p">$</span> mulle-sde craft</code></pre>
+         </li>
+      </ol>
+
+      <p class="section-note"><strong>Consumers don't need mulle-sde.</strong>
+      Projects built with it can be consumed with plain <code>cmake</code> — see
+      the <a href="https://github.com/mulle-core/mulle-core" rel="noopener">mulle-core</a>
+      amalgamation for a zero-dependency example.</p>
+   </section>
+
+   <!-- ============ LEARN ============ -->
+   <section class="section" id="learn">
+      <h2 class="section-title">Learn it</h2>
+      <p class="section-lead">MulleSDE strives to explain itself: every command
+      has help, most have sub-help, and the workflow is documented as you go.</p>
+
+      <div class="panes panes-3">
+         <article class="pane" data-title="book">
+            <span class="pane-icon" aria-hidden="true">▤</span>
+            <h3><a href="https://www.mulle-kybernetik.com/de-re-mulle-sde/" rel="noopener">De Re mulle-sde</a></h3>
+            <p>A short introductory guide that gives a good overview of the
+            whole system, including how to use mulle-sde in an existing
+            Makefile project with minimal friction.</p>
+            <p class="pane-actions"><a class="btn btn-primary" href="https://www.mulle-kybernetik.com/de-re-mulle-sde/" rel="noopener">Read the guide</a></p>
+         </article>
+
+         <article class="pane" data-title="wiki">
+            <span class="pane-icon" aria-hidden="true">▦</span>
+            <h3><a href="https://github.com/mulle-sde/mulle-sde/wiki" rel="noopener">The WiKi</a></h3>
+            <p>More in-depth information that does not fit into the help texts:
+            concepts, workflows and recipes for the commands beneath
+            mulle-sde.</p>
+         </article>
+
+         <article class="pane" data-title="help">
+            <span class="pane-icon" aria-hidden="true">?</span>
+            <h3>Help &amp; howtos</h3>
+            <p>Read the built-in topics without leaving the terminal. e.g.
+            learn why a test directory is an isolated mulle-sde project:</p>
+            <pre class="pane-code"><code><span class="p">$</span> mulle-sde help
+<span class="p">$</span> mulle-sde howto testing</code></pre>
+         </article>
+      </div>
+   </section>
+
+</main>
+
+<footer class="site-footer">
+   <div class="footer-grid">
+      <div>
+         <p class="footer-brand">&gt;_ mulle-sde</p>
+         <p>The Unix IDE. Written in bash. By
+         <a href="https://mulle-kybernetik.com/weblog" rel="noopener">Nat! (Mulle kybernetiK)</a>.</p>
+      </div>
+      <div>
+         <p class="footer-heading">Resources</p>
+         <ul>
+            <li><a href="https://github.com/mulle-sde/mulle-sde" rel="noopener">GitHub repository</a></li>
+            <li><a href="https://www.mulle-kybernetik.com/de-re-mulle-sde/" rel="noopener">Developer guide</a></li>
+            <li><a href="https://github.com/mulle-sde/mulle-sde/wiki" rel="noopener">WiKi</a></li>
+            <li><a href="https://github.com/mulle-sde/mulle-sde-developer" rel="noopener">mulle-sde-developer</a></li>
+            <li><a href="https://github.com/mulle-sde" rel="noopener">mulle-sde org</a></li>
+         </ul>
+      </div>
+      <div>
+         <p class="footer-heading">License</p>
+         <p><a href="https://opensource.org/licenses/BSD-3-Clause" rel="noopener">BSD-3-Clause</a></p>
+      </div>
+   </div>
+   <p class="footer-note">Documented for humans — and for AI agents. ☰</p>
+</footer>
+
+</body>
+</html>
