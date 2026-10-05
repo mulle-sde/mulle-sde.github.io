@@ -294,10 +294,14 @@
          </li>
       </ol>
 
-      <p class="section-note"><strong>Consumers don't need mulle-sde.</strong>
-      Projects built with it can be consumed with plain <code>cmake</code> — see
-      the <a href="https://github.com/mulle-core/mulle-core" rel="noopener">mulle-core</a>
-      amalgamation for a zero-dependency example.</p>
+      <p class="section-note"><strong>Building without mulle-sde.</strong>
+      A mulle-sde project is still a normal CMake project, so you can build it
+      directly with <code>cmake</code> — mulle-sde mostly orchestrates the build
+      systems for you. What you lose is dependency management: without
+      mulle-sde you must provide the project's dependencies yourself. (The
+      <a href="https://github.com/mulle-core/mulle-core" rel="noopener">mulle-core</a>
+      amalgamation is the exception — it bundles its constituents, so it needs
+      nothing extra.)</p>
    </section>
 
    <!-- ============ LEARN ============ -->
